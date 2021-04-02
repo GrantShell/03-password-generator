@@ -9,6 +9,8 @@ var confirmUpperCase;
 var confirmLowerCase;
 var confirmNumbers;
 var confirmSpecialCharacters;
+var passwordVariables;
+var userSelection;
 
 // Write password to the #password input
 function writePassword() {
@@ -53,5 +55,12 @@ function generatePassword() {
     !confirmSpecialCharacters &&
     !confirmUpperCase
   ) {
+    userSelection = alert(`Please choose a selection`);
+  }
+
+  for (var i = 0; (i = passwordLength); i++) {
+    var userSelection =
+      passwordVariables[Math.floor(Math.random() * passwordVariables.length)];
+    console.log(userSelection);
   }
 }
